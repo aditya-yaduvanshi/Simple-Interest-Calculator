@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+  </head>
+  <body>
+    <div class="maindiv">
+      <h1>Simple Interest Calculator</h1>
+      <div class="labelelement"><label>Amount</label></div>
+      <div class="inputelement"><input id="principal" type="number"></div><br>
+      <div class="labelelement"><label>Interest Rate</label></div>
+      <div class="inputelement"><input id="rate" type="range" min="1" max="10" onchange="range();"><span id="spanrate">6%</span></div><br>
+      <div class="labelelement"><label>No. of Years</label></div>
+      <div class="inputelement">
+        <select id="years">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+      </div><br>
+      <div class="button">
+        <button onclick="compute();">Compute Interest</button>
+      </div>
+      <label id="result"></label>
+      <footer>
+        <label>&copy Everyone Can Get Rich</label>
+      </footer>
+    </div>
+  </body>
+</html>
