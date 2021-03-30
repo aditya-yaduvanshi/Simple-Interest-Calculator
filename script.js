@@ -14,7 +14,7 @@ function compute()
     onfocus.principal;
     return false;
   };
-  else if (principal<=0){
+  if (principal<=0){
     alert("Please check amount must be greater than zero.");
     onfocus.principal;
     return false;
