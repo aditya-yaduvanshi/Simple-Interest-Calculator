@@ -11,12 +11,12 @@ function compute()
   amount = (principal*rate*years)/100;
   if(principal==""){
     alert("Please enter amount to compute interest.");
-    onfocus.principal;
+    onfocus = document.getElementById("principal");
     return false;
   };
   if (principal<=0){
     alert("Please check amount must be greater than zero.");
-    onfocus.principal;
+    onfocus = document.getElementById("principal");
     return false;
   }
   var Y = new Date();
