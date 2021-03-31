@@ -1,0 +1,113 @@
+* {
+  font-family: Arial;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+}
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 100%;
+  justify-content: center;
+}
+h1 {
+  color: grey;
+  font-family: Verdana;
+  text-align: center;
+  font-size: large;
+}
+.maindiv {
+  background-color: white;
+  display: inline-block;
+  border-radius: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  margin: auto;
+}
+.labelelement, .inputelement {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.labelelement {
+  display: inline-block;
+  width: 80px;
+  height: 14px;
+}
+.inputelement {
+  display: inline-block;
+  position: relative;
+  left: 30px;
+}
+.inputelement > input {
+  position: relative;
+  top: 3px;
+}
+.inputelement > span {
+  position: relative;
+  top: -2px;
+}
+#tooltip-rate, #tooltip-principal, #tooltip-years, #tooltip-ngo {
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  font-family: Arial;
+  position: absolute;
+  padding: 1px;
+  text-align: center;
+  border-radius: 4px;
+  visibility: hidden;
+}
+#tooltip-principal {
+  top: 25px;
+  left: 2px;
+  width: 170px;
+}
+#tooltip-rate {
+  width: 190px;
+  top: 20px;
+  left: -18px;
+}
+#tooltip-years {
+  width: 134px;
+  top: 3px;
+  left: 45px;
+}
+#tooltip-ngo {
+  position: relative;
+  top: 15px;
+  left: -130px;
+  width: 100px;
+}
+#prtool:hover span, #ratool:hover span, #yrtool:hover span, #fotool:hover span {
+  visibility: visible;
+  transition: 2s;
+}
+.button {
+  margin-top: 40px;
+  display: inline;
+}
+.button:hover button {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+#result {
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+#fotool {
+  display: inline;
+}
+footer {
+  margin-top: 20px;
+}
+footer > label {
+  font-size: 14px;
+}
